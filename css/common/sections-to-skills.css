@@ -1,0 +1,106 @@
+.banner div {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem; }
+  .banner div p {
+    margin: 0.3em;
+    padding: 1rem auto; }
+  .banner div h1 {
+    padding: 1rem auto; }
+
+@media (min-width: 768px) {
+  .banner {
+    width: 100%;
+    font-size: 3rem;
+    min-height: 50vh; } }
+
+@media (min-width: 1000px) {
+  .banner {
+    font-size: 6rem;
+    min-height: 60vh; } }
+
+@media (min-width: 1200px) {
+  .banner {
+    font-size: 8rem;
+    min-height: 70vh; } }
+
+.banner .book-now-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner .book-now-cont .book-now {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: auto;
+    background-color: rgba(225, 165, 165, 0.8); }
+    .banner .book-now-cont .book-now p {
+      font-size: 1.3rem;
+      margin: 0;
+      color: rgba(58, 81, 81, 0.8);
+      text-decoration: none; }
+      .banner .book-now-cont .book-now p a {
+        color: rgba(255, 255, 255, 0.7); }
+
+.invitation {
+  background-color: rgba(255, 255, 255, 0.7); }
+  .invitation p {
+    text-align: center;
+    padding: 0.8rem; }
+  @media (min-width: 768px) {
+    .invitation {
+      font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .invitation {
+      font-size: 1.5rem; } }
+  .invitation .myName {
+    font-size: 1.1rem; }
+    @media (min-width: 768px) {
+      .invitation .myName {
+        font-size: 1.3rem; } }
+    @media (min-width: 1200px) {
+      .invitation .myName {
+        font-size: 1.8rem; } }
+
+.col {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.col__items {
+  margin: 3rem;
+  padding: 1rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 9rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.8);
+  transition: transform .2s; }
+
+.col__items:hover {
+  transform: scale(1.5); }
+
+.col h2 {
+  text-align: center; }
+
+.col p {
+  padding: 1rem;
+  text-align: center; }
+
+.skills {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.skills__icons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2rem; }
+
+.skills__h2 {
+  text-align: center; }

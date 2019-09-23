@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: 'Manjari', sans-serif;
+  font-size: 16px;
+  color: #3a5151; }
+
+body {
+  margin: 0;
+  background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center/cover no-repeat fixed; }
+
+main {
+  display: flex;
+  flex-direction: column; }
