@@ -8,16 +8,13 @@ html {
 
 body {
   margin: 0;
-  background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center/cover no-repeat fixed; }
+  background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center no-repeat fixed; }
 
 main {
   display: flex;
   flex-direction: column; }
 
 /* old fixed nav bar */
-* {
-  box-sizing: border-box; }
-
 .logo {
   text-align: center; }
   .logo img {
