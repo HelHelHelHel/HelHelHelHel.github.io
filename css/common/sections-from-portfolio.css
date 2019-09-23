@@ -176,9 +176,10 @@
       cursor: pointer; }
 
 .nice-to-meet {
+  height: 10vh;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem; }
+  justify-content: center;
+  padding: 0.5rem; }
   .nice-to-meet img {
     width: 1rem; }
     @media (min-width: 768px) {
@@ -188,6 +189,5 @@
       .nice-to-meet img {
         width: 2rem; } }
   .nice-to-meet h2 {
-    padding: 1rem;
     color: rgba(255, 255, 255, 0.8);
     text-align: center; }

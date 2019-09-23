@@ -8,7 +8,10 @@ html {
 
 body {
   margin: 0;
-  background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center no-repeat fixed; }
+  background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center/cover no-repeat scroll; }
+  @media (min-width: 768px) {
+    body {
+      background: white url("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg") center/cover no-repeat fixed; } }
 
 main {
   display: flex;
