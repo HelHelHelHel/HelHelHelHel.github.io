@@ -179,6 +179,44 @@ main {
   .banner div h1 {
     padding: 1rem auto; }
 
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+  .banner div .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    animation-duration: 2s; }
+  .banner div .line {
+    position: relative;
+    top: 50%;
+    width: 14em;
+    margin: 0 auto;
+    border-right: solid rgba 255, 255, 255, 0.75 2px;
+    font-size: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); }
+  .banner div .anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 2s steps(40) infinite normal; }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: 14em; } }
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75); }
+  to {
+    border-right-color: transparent; } }
+
 @media (min-width: 768px) {
   .banner {
     width: 100%;
