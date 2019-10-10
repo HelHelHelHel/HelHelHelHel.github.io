@@ -14,7 +14,7 @@
   .my-portfolio img {
     width: 15rem; }
   .my-portfolio .zoom img {
-    transition: transform .5s ease; }
+    transition: transform 0.5s ease; }
   .my-portfolio .zoom img:hover {
     transform: scale(2); }
   .my-portfolio .portfolio__items {

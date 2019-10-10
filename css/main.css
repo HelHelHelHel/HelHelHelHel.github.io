@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 html {
-  font-family: 'Manjari', sans-serif;
+  font-family: "Manjari", sans-serif;
   font-size: 16px;
   color: #3a5151; }
 
@@ -87,7 +87,7 @@ main {
 /* top and bottom lines style */
 .menu-wrap .hamburger > div:before,
 .menu-wrap .hamburger > div:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: -10px;
@@ -178,20 +178,6 @@ main {
     padding: 1rem auto; }
   .banner div h1 {
     padding: 1rem auto; }
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-  .banner div .fadeInRight {
-    -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight;
-    animation-duration: 2s; }
   .banner div .line {
     position: relative;
     top: 50%;
@@ -244,7 +230,41 @@ main {
     height: 10rem;
     border-radius: 50%;
     margin: auto;
-    background-color: rgba(225, 165, 165, 0.8); }
+    background-color: rgba(225, 165, 165, 0.8);
+    position: relative;
+    -webkit-animation-name: example;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4.5s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 4.5s;
+    animation-timing-function: ease-in;
+    /* Safari 4.0 - 8.0 */
+    /* Standard syntax */ }
+
+@-webkit-keyframes example {
+  0% {
+    left: -900px;
+    top: -100px;
+    from--ms-transform: rotate(0deg);
+    to--ms-transform: rotate(360deg); }
+  100% {
+    left: 0px;
+    top: 0px;
+    from--ms-transform: rotate(0deg);
+    to--ms-transform: rotate(360deg); } }
+
+@keyframes example {
+  0% {
+    left: -500px;
+    top: -100px;
+    from--ms-transform: rotate(0deg);
+    to--ms-transform: rotate(360deg); }
+  100% {
+    left: 0px;
+    top: 0px;
+    from--ms-transform: rotate(0deg);
+    to--ms-transform: rotate(360deg); } }
     .banner .book-now-cont .book-now p {
       font-size: 1.3rem;
       margin: 0;
@@ -286,7 +306,7 @@ main {
   border-radius: 9rem;
   background-color: rgba(0, 0, 0, 0.7);
   color: rgba(255, 255, 255, 0.8);
-  transition: transform .2s; }
+  transition: transform 0.2s; }
 
 .col__items:hover {
   transform: scale(1.5); }
@@ -327,7 +347,7 @@ main {
   .my-portfolio img {
     width: 15rem; }
   .my-portfolio .zoom img {
-    transition: transform .5s ease; }
+    transition: transform 0.5s ease; }
   .my-portfolio .zoom img:hover {
     transform: scale(2); }
   .my-portfolio .portfolio__items {
