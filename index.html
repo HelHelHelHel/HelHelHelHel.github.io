@@ -109,7 +109,7 @@
                 <div class="icon">
                     <img src="/img/icons/javascript.svg" alt="icon of javascript" width=40rem>
                 </div>
-
+            
 
                 <div class="icon">
                     <img src="/img/icons/php-document.svg" alt="icon of php-document" width=40rem>
@@ -151,53 +151,60 @@
                 <section class="portfolio1">
                     <div class="portfolio__items">
                         <div class="portfolio__items--picture zoom">
-                            <img src="/img/aditya-chinchure-mpzFnoQCwWU-unsplash.jpg" alt="vancouver">
+                            <img src="/img/Screen Shot 2019-10-12 at 4.30.41 PM.png" alt="first page of website">
                         </div>
                         <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos</p>
+                            <p>Project website for a future botox clinic in Israel made with bootstrap in progress. <a
+                                    href="http://whatisallowed.eu" target="_blank" class="link">Check it out here</a>
+                            </p>
                         </div>
                     </div>
                     <div class="portfolio__items">
                         <div class="portfolio__items--picture zoom">
-                            <img src="/img/yasmine-arfaoui-05PxOaYZhBU-unsplash.jpg" alt="nature">
+                            <img src="./img/rachel-park-hrlvr2ZlUNk-unsplash.jpg" alt="breakfast">
                         </div>
                         <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos</p>
+                            <p id="changeText">Do you own a business or have a passion project? If so then please
+                                <button id="btn" class="portfBtn">Click
+                                    me!</button></p>
                         </div>
                     </div>
+                    
                     <div class="portfolio__items">
                         <div class="portfolio__items--picture zoom">
-                            <img src="/img/james-walsh-GINEcy7V2mk-unsplash.jpg" alt="vancouver" m>
+                            <img src="./img/ben-white-vJz7tkHncFk-unsplash.jpg" alt="picture of gift">
+
                         </div>
                         <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos</p>
+                            <p id="gift"></p>
                         </div>
                     </div>
                 </section>
                 <section class="portfolio2">
+                    
+                    <div class="portfolio__items">
+                            <div class="portfolio__items--picture zoom">
+                                <img src="./img/joyce-huis-66QEF_ZmzKY-unsplash.jpg" alt="cizkovec">
+                            </div>
+                            <div class="portfolio__items--descr">
+                                <p>My next project is a new website for a small Bed&Breakfast.</p>
+                            </div>
+                        </div>
+                    <div class="portfolio__items">
+                        <div class="portfolio__items--picture zoom">
+                            <img src="./img/carl-raw-hv4jH7B_U8Y-unsplash.jpg" alt="nature">
+                        </div>
+                        <div class="portfolio__items--descr">
+                            <p id="discount">Try your luck and see if you can get a discount today! <button id="win" class="win">Try your luck!</button></p>
+                        </div>
+                    </div>
                     <div class="portfolio__items">
                         <div class="portfolio__items--picture zoom">
                             <img src="/img/aditya-chinchure-mpzFnoQCwWU-unsplash.jpg" alt="vancouver">
                         </div>
                         <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos</p>
-                        </div>
-                    </div>
-                    <div class="portfolio__items">
-                        <div class="portfolio__items--picture zoom">
-                            <img src="/img/yasmine-arfaoui-05PxOaYZhBU-unsplash.jpg" alt="nature">
-                        </div>
-                        <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos</p>
-                        </div>
-                    </div>
-                    <div class="portfolio__items">
-                        <div class="portfolio__items--picture zoom">
-                            <img src="/img/james-walsh-GINEcy7V2mk-unsplash.jpg" alt="vancouver">
-                        </div>
-                        <div class="portfolio__items--descr">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quos
-                                <!-- <button class="portfolio__btn" href=" ">Explore!</button> -->
+                            <p>Here will be your website. Hurry up to save your spot. Contact me below.
+                                
 
                             </p>
                         </div>
@@ -228,9 +235,8 @@
                     lifestyle, and having a deep conversations about, among others, my interests. If I am not developing
                     you can spot me spinning fire on my foot while standing on my head somewhere around the world.</p>
                 <h3>Get in touch and let's do something great together!</h3>
-                <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php"
-                    method="post">
-                    <button href=" ">Contact me!</button>
+                
+                    <button><a href="https://www.linkedin.com/in/helenahrubesova/" class="contactBtn">Contact me!</a></button>
 
                 </form>
 
@@ -285,25 +291,50 @@
             <img src="img/icons/cards.svg" alt="ace of heart">
         </section>
     </main>
-    <!-- <script type="text/javascript">
+    <script>
 
-            var images = new Array();
-            
-            function preloadImages(){
-            
-                for (i=0; i < preloadImages.arguments.length; i++){
-            
-                     images[i] = new Image();
-            
-                    images[i].src = preloadImages.arguments[i];
-            
+        // onclick function changing innerHTML text
+        document.addEventListener('DOMContentLoaded', () => {
+            const changeText = document.querySelector('#changeText');
+            const btn = document.querySelector('#btn');
+            btn.addEventListener('click', () => {
+                
+                document.getElementById('changeText').innerHTML = 'I can build a beautiful website for your business/project which will attract many future customers/fans.';
+            });
+
+            // function counting days to Xmas
+
+            let today = new Date();
+            let cmas = new Date(today.getFullYear(), 11, 25);
+                if (today.getMonth() === 11 && today.getDate() > 25) {
+                cmas.setFullYear(cmas.getFullYear() + 1);
                 }
+            const one_day = 1000 * 60 * 60 * 24;
+            let x = Math.ceil((cmas.getTime() - today.getTime()) / (one_day));
+            const gift = document.getElementById('gift');
+            gift.innerHTML += (
+                `<div>Today, there is exactly ${x} days to Christmas but you can get a gift from me everyday :-).</div>`
+            );
+
+            // function setting random discount
+            const discount = document.getElementById('discount');
+            let winOptions = ['10% off', 'Try again', 'Sorry, no luck today', 'Second website free', 'Free hug']
+                
+                let index = Math.floor(Math.random()* winOptions.length);
+                
+                let yourWin = winOptions[index];
             
-            }
             
-            preloadImages("/img/mado-el-khouly-MA8YoAoKpfY-unsplash.jpg", "img/icons/cards.svg");
+            const winBtn = document.querySelector('#win');
+            winBtn.addEventListener('click', () => {
+                discount.innerHTML = `Today you win: ${yourWin}`;
+            });
+
             
-        </script> -->
+
+        });
+
+    </script>
 </body>
 
 </html>

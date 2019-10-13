@@ -350,6 +350,13 @@ main {
     transition: transform 0.5s ease; }
   .my-portfolio .zoom img:hover {
     transform: scale(2); }
+  .my-portfolio .portfolio__items--descr > p {
+    padding: 5px; }
+  .my-portfolio .link {
+    color: black; }
+  .my-portfolio .portfBtn, .my-portfolio .win {
+    background-color: rgba(225, 165, 165, 0.7);
+    border: 1px solid black; }
   .my-portfolio .portfolio__items {
     display: flex;
     flex-direction: column;
@@ -425,6 +432,9 @@ main {
       background-color: rgba(225, 165, 165, 0.8);
       border: solid black;
       border-radius: 10px; }
+    .about .about__item2 a {
+      text-decoration: none;
+      color: black; }
     .about .about__item2 button:hover {
       background: rgba(0, 0, 0, 0.7);
       border: solid rgba(225, 165, 165, 0.8);
